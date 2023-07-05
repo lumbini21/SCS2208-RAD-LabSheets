@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<form>
+    <p>1)</p><br>
+    <label for="txt1">Input value 1 : </label><br>
+    <input type="text" id="txt1"/>
+    <br>
+    <label for="txt2">Input value 2 : </label><br>
+    <input type="text" id="txt2"/>
+    <br>
+    <input type="submit" value="Submit" onclick="func1()" />
+    <br>
+    <p id="q1">Result : </p>
+    <br>
+
+    <p>2)</p><br>
+    <label for="txt3">Input a natural number : </label><br>
+    <input type="text" id="txt3"/>
+    <br>
+    <input type="submit" value="Submit" onclick="func2()"/>
+    <br>
+    <p id="q2">Type : </p>
+    <br>
+
+    <p>3)</p>
+    <p id="q3">Current Date : </p>
+    <input type="submit" id="b3" value="GetDate" onclick="func3()"/>
+    <br>
+    <p id="txt3"></p>
+    <br>
+
+    <p>4)</p>
+    <p id="q4">Length : </p>
+</form>
+
+<script>
+    function func1(){
+        var n1 = document.getElementById("txt1").value;
+        var n2 = document.getElementById("txt2").value;
+        var result;
+        if(n1 && n2){
+            result = true;
+        }else{
+            result =  false;
+        }
+        alert(result);
+        //document.write(result);
+    }
+
+    function func2(){
+        var n3 = parseInt(document.getElementById("txt3").value);
+        var result = typeof(n3);
+        alert(result);
+    }
+
+    var date = new Date();
+
+    function func3(){
+        date = new Date();
+        alert(date + "\nType : " + typeof(date));
+    }
+    
+    function func4(){
+        var str = "OceanGate";
+        var lenstr = str.length;
+        var result;
+        if (lenstr > 10){
+            result = "Greater than 10";
+        }else{
+            result = "Less than 10";
+        }
+        return result;
+    }
+    document.write(func4());
+
+</script>
+</body>
+</html>

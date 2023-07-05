@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="q1">1) Result : </p>
+    <p id="q4">4) Value of "banana" : </p>
+    <p id="q4_1">number of elements : </p>
+    <script>
+        const games=["The Last of Us", "Uncharted", "God of War", "Bloodborne"];
+        var i=games.indexOf("God of War");
+        document.getElementById("q1").innerHTML+=i;
+
+    
+        const arr = [["Name", "John"], ["Age", 30], ["City", "Colombo"]];
+        function func2(arr){
+            var map = new Map(arr);
+            return map;
+        }
+        console.log(func2(arr));
+
+        function func3(map){
+            map.delete("Age");
+            return map;
+        }
+        console.log(func3(func2(arr)));
+
+        var map = new Map();
+        map.set("apple", 5);
+        map.set("banana", 3);
+        map.set("orange", 2);
+
+        document.getElementById("q4").innerHTML+=map.get("banana");
+        document.getElementById("q4_1").innerHTML+=map.size;
+
+    </script>
+</body>
+</html>

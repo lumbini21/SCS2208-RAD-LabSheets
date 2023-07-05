@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function concatString(txt1= "Programmo", txt2 = "Phobia"){
+            return txt1.concat(txt2); 
+        }
+
+        function lowerCase(txt){
+            return txt.toLowerCase();
+        }
+
+        function upperCase(txt){
+            return txt.toUpperCase();
+        }
+
+        function splitText(txt="Programmo,Phobia"){
+            arr = txt.split(',');
+            return arr;
+        }
+
+        function findIndex(txt="ProgrammoPhobia"){
+            return txt.indexOf("Phobia");
+        }
+
+        txt = concatString();
+        document.write(txt + "<br>" + lowerCase(txt) + "<br>" + upperCase(txt)  + "<br>" + findIndex());
+        console.log(splitText());
+    </script>
+
+</body>
+</html>
