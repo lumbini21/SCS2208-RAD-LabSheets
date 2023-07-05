@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 03</title>
+    </head>
+    <body>
+        <script>
+            //1
+            document.write("<br>1)<br>")
+            function calcArea(r){
+                return 3.14*r*r;
+            }
+
+            function calcPerimeter(r){
+                return 2*3.14*r;
+            }
+            document.write("Area of the circle of 5m radius : " + calcArea(5));
+            document.write("<br>Perimeter of the circle with 5m radius : " + calcPerimeter(5));
+
+            //2
+            document.write("<br><br>2)<br>");
+            function calcVolume(a){
+                return a*a*a;
+            }
+            document.write("Volume of a cube with 5m width : " + calcVolume(5));
+
+            //3
+            document.write("<br><br>3)<br>")
+            function alertMessage(){
+                return alert("Hello, Welcome to our paradise");
+            }
+
+            document.write("Alert message!" + alertMessage());
+        </script>
+    </body>
+</html>

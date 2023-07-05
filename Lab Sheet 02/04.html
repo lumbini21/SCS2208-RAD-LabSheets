@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 04</title>
+    </head>
+    <body>
+        <script>
+            //1
+            document.write("1)<br>");
+            const mammal = {
+                color:"orange",
+                type:"cat",
+                legs:4,
+                name:"kitty",
+                speed:24
+            };
+            document.write("type and name : " + mammal.type + " - " + mammal.name);
+
+            //2
+            document.write("<br><br>2)<br>");
+            const person = {
+                firstname:"John",
+                lastname:"Doe",
+                id:5566,
+                fullname : function(){
+                    return this.firstname + " " + this.lastname;
+                }
+            };
+            document.write(person.fullname());
+
+            //3
+            document.write("<br><br>3)<br>");
+            const traingle = {
+                height:25,
+                base:24,
+                color:"red",
+                area : function(){
+                    return this.height * this.base;
+                }
+            };
+            document.write("height : " + traingle.height + "<br>base : " + traingle.base + "<br>color : " + traingle.color + "<br>area : " + traingle.area());
+        </script>
+    </body>
+</html>
