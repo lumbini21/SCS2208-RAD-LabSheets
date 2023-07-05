@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test5_3</title>
+</head>
+<body>
+    <label>Enter No1:</label><br>
+    <input type="text" placeholder="Enter a number" id="value1"><br><br>
+    <label>Enter No2:</label><br>
+    <input type="text" placeholder="Enter a number" id="value2"><br><br>
+    <label>Enter No3:</label><br>
+    <input type="text" placeholder="Enter a number" id="value3"><br><br>
+    <input type="submit" name="submit" onclick="largest()" value="Try it">
+
+<script>
+    //window.alert(n1);
+    function largest(){
+        let n1 = parseFloat(document.getElementById("value1").value);
+        let n2 = parseFloat(document.getElementById("value2").value);
+        let n3 = parseFloat(document.getElementById("value3").value);
+
+        if(n1>n2)
+        {
+            if(n1>n3)
+            {
+                window.alert(n1);
+            }
+            else{
+                window.alert(n3);
+            }
+        }
+        else{
+            if(n2>n3){
+                window.alert(n2);
+            }
+            else{
+                window.alert(n3);
+            }
+        }
+        
+    }
+</script>
+
+</body>
+</html>         

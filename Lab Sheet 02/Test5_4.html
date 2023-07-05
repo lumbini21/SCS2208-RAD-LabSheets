@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test5_4</title>
+</head>
+<body>
+    <label>Enter No1:</label><br>
+    <input type="text" placeholder="Enter a number" id="value1"><br><br>
+    
+    <input type="submit" name="submit" onclick="CheckPrime()" value="Try it">
+
+<script>
+    //window.alert(n1);
+    
+    function CheckPrime(){
+        let p=1;
+        let n1 = parseFloat(document.getElementById("value1").value);
+
+        if(n1==1){
+            window.alert("Not a Prime Number");
+        }
+        else if(n1>1){
+            for(let i=2;i<n1;i++){
+                if(n1%i==0){
+                    p=0;
+                    break;
+                }
+            }
+        }
+        if(p==1){
+            window.alert("Prime Number");
+        }
+        else{
+            window.alert("Not a Prime Number");
+        }
+    }
+</script>
+
+</body>
+</html>         

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test5_8_9_10</title>
+</head>
+<body>
+    
+<script>
+    //window.alert(n1);
+    const names=["sadun","kamal","nimal","ruwan"];
+    let x=names.toString();
+    names.pop(names[names.length-1]);
+    document.write(names+"<br>"); 
+    names.push("nuwani");
+    document.write(names+"<br>");
+
+    const myGirls=["Cecilei","Lone"];
+    const myBoys=["Emil","Tobias","Linus"];
+    const newarr=myGirls.concat(myBoys);
+    document.write(newarr+"<br>");
+
+    const numbersArray=[1,13,22,123,49];
+    let tot=0;
+    for(let i=0;i<numbersArray.length;i++)
+    {
+        tot=tot+numbersArray[i];
+    }
+    document.write(tot);
+</script>
+
+</body>
+</html>         

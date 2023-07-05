@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 05</title>
+    </head>
+    <body>
+        <form>
+            <fieldset style="background-color: powderblue; width: 300px;">
+                
+                <label for="txt">Enter three numbers seperated by space : </label>
+                <input type="text" id="txt" placeholder="Enter three numbers"/>
+                <input type="submit" id="submit" value="Submit" onclick="inputNumber()"/>
+            </fieldset>
+        </form>
+        <script>
+    
+            let time = new Date();
+            let h = time.getHours();
+            let m = time.getMinutes();
+            let s = time.getSeconds();
+            if(h<10){
+                alert("Good Morning!");
+            }else if(h<20){
+                alert("Good Day!");
+            }else{
+                alert("Good evening!");
+            }
+    
+
+            //2
+
+            let fruits = ["banana", "pineapple", "apple"];
+            let i = Math.floor(Math.random() * 3) ;
+            switch(i){
+                case 0:
+                    alert("Yellow");
+                    break;
+                case 1:
+                    alert("Orange");
+                    break;
+                case 2:
+                    alert("Green");
+                    break;
+            }
+
+
+            //3
+            document.write("<br><br>3)<br>");
+            function inputNumber(){
+                let a = document.getElementById('txt').value;
+                let arr = a.split(" ");
+                let n = Math.max(arr[0], arr[1], arr[2]);
+                document.write(n);
+            }
+        
+
+        </script>
+    </body>
+</html>
