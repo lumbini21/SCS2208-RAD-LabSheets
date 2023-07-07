@@ -13,10 +13,17 @@
                 this.width = width;
                 this.height = height;
             }
+
+            getArea(){
+                return this.width * this.height;
+            }
         }
 
         let rec1 = new Rectangle(10, 20);
-        document.write("Width of rectangle is ", rec1.width);
+        let rec2 = new Rectangle(20, 30);
+        document.write("Area of rectangle 1 is ", rec1.getArea());
+        document.write("<br>");
+        document.write("Area of rectangle 2 is ", rec2.getArea());
     </script>
 </body>
 </html>
