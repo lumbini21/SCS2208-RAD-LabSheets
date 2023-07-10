@@ -8,10 +8,40 @@
 <body>
     <script>
         class Dog{
+            constructor(breed, age, color){
+                this.breed = breed;
+                this.age = age;
+                this.color = color;
+            }
+
+            eat(){
+                console.log(this.breed + " is eating");
+            }
+
+            sleep(){
+                console.log(this.breed + " is sleeping");
+            }
             
-            
+            sit(){
+                console.log(this.breed + " is sitting");
+            }
+
+            run(){
+                console.log(this.breed + " is running");
+            }
 
         }
+
+        let dog1 = new Dog("Pug", 3, "Black");
+        let dog2 = new Dog("Boxer", 2, "White");
+        let dog3 = new Dog("Poodle", 1, "Brown");
+
+        console.log(dog1.color);
+        dog1.eat();
+        console.log(dog2.age);
+        dog2.run();
+        console.log(dog3.breed);
+        dog3.sit();
     </script>
 </body>
 </html>
